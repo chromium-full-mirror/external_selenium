@@ -100,6 +100,11 @@ Used to mark a field on a Page Object to indicate that lookup should use a serie
  in a chain as described in <A HREF="../../../../org/openqa/selenium/support/pagefactory/ByChained.html" title="class in org.openqa.selenium.support.pagefactory"><CODE>ByChained</CODE></A>
  
  Eg:
+
+ <pre class="code">
+ &#64;FindBys({&#64;FindBy(id = "foo"),
+           &#64;FindBy(className = "bar")})
+ </pre>
 <P>
 
 <P>

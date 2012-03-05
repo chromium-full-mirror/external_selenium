@@ -22,6 +22,7 @@ import org.openqa.selenium.os.CommandLine;
 
 public class TestProcess extends CommandLine {
   public TestProcess() {
-    super(null);
+    // Ping exists on all supported OS
+    super("ping");
   }
 }

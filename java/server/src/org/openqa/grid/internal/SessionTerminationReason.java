@@ -19,6 +19,7 @@ limitations under the License.
 
 public enum SessionTerminationReason {
   TIMEOUT,
+  BROWSER_TIMEOUT,
   ORPHAN,
   CLIENT_STOPPED_SESSION,
   CLIENT_GONE,

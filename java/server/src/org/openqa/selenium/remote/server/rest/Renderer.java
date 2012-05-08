@@ -18,11 +18,12 @@ limitations under the License.
 package org.openqa.selenium.remote.server.rest;
 
 import org.openqa.selenium.remote.server.HttpRequest;
+import org.openqa.selenium.remote.server.HttpResponse;
 
 import javax.servlet.http.HttpServletResponse;
 
 public interface Renderer {
 
-  void render(HttpRequest request, HttpServletResponse response, RestishHandler handler)
+  void render(HttpRequest request, HttpResponse response, RestishHandler handler)
       throws Exception;
 }

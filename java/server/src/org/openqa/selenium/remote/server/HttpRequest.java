@@ -19,13 +19,15 @@ package org.openqa.selenium.remote.server;
 
 import java.io.Reader;
 
-import javax.servlet.http.HttpServletResponse;
-
 public interface HttpRequest {
 
   String getAppUri();
 
   String getUri();
+
+  String getPath();
+
+  String getMethod();
 
   String getHeader(String header);
 

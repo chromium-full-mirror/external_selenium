@@ -90,11 +90,12 @@ org.openqa.selenium.chrome</FONT>
 Class ChromeDriverService</H2>
 <PRE>
 java.lang.Object
-  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>org.openqa.selenium.chrome.ChromeDriverService</B>
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../org/openqa/selenium/remote/service/DriverService.html" title="class in org.openqa.selenium.remote.service">org.openqa.selenium.remote.service.DriverService</A>
+      <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>org.openqa.selenium.chrome.ChromeDriverService</B>
 </PRE>
 <HR>
 <DL>
-<DT><PRE>public class <B>ChromeDriverService</B><DT>extends java.lang.Object</DL>
+<DT><PRE>public class <B>ChromeDriverService</B><DT>extends <A HREF="../../../../org/openqa/selenium/remote/service/DriverService.html" title="class in org.openqa.selenium.remote.service">DriverService</A></DL>
 </PRE>
 
 <P>
@@ -157,37 +158,14 @@ Manages the life and death of a chromedriver server.
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configures and returns a new <A HREF="../../../../org/openqa/selenium/chrome/ChromeDriverService.html" title="class in org.openqa.selenium.chrome"><CODE>ChromeDriverService</CODE></A> using the default configuration.</TD>
 </TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;java.net.URL</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/openqa/selenium/chrome/ChromeDriverService.html#getUrl()">getUrl</A></B>()</CODE>
-
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.openqa.selenium.remote.service.DriverService"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.openqa.selenium.remote.service.<A HREF="../../../../org/openqa/selenium/remote/service/DriverService.html" title="class in org.openqa.selenium.remote.service">DriverService</A></B></TH>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;boolean</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/openqa/selenium/chrome/ChromeDriverService.html#isRunning()">isRunning</A></B>()</CODE>
-
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks whether the chromedriver child proces is currently running.</TD>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/openqa/selenium/chrome/ChromeDriverService.html#start()">start</A></B>()</CODE>
-
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starts this service if it is not already running.</TD>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../org/openqa/selenium/chrome/ChromeDriverService.html#stop()">stop</A></B>()</CODE>
-
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stops this service is it is currently running.</TD>
+<TD><CODE><A HREF="../../../../org/openqa/selenium/remote/service/DriverService.html#findExecutable(java.lang.String, java.lang.String, java.lang.String, java.lang.String)">findExecutable</A>, <A HREF="../../../../org/openqa/selenium/remote/service/DriverService.html#getUrl()">getUrl</A>, <A HREF="../../../../org/openqa/selenium/remote/service/DriverService.html#isRunning()">isRunning</A>, <A HREF="../../../../org/openqa/selenium/remote/service/DriverService.html#start()">start</A>, <A HREF="../../../../org/openqa/selenium/remote/service/DriverService.html#stop()">stop</A></CODE></TD>
 </TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
@@ -234,18 +212,6 @@ public static final java.lang.String <B>CHROME_DRIVER_EXE_PROPERTY</B></PRE>
 </TR>
 </TABLE>
 
-<A NAME="getUrl()"><!-- --></A><H3>
-getUrl</H3>
-<PRE>
-public java.net.URL <B>getUrl</B>()</PRE>
-<DL>
-<DD><DL>
-
-<DT><B>Returns:</B><DD>The base URL for the managed chromedriver server.</DL>
-</DD>
-</DL>
-<HR>
-
 <A NAME="createDefaultService()"><!-- --></A><H3>
 createDefaultService</H3>
 <PRE>
@@ -259,51 +225,6 @@ public static <A HREF="../../../../org/openqa/selenium/chrome/ChromeDriverServic
 <DD><DL>
 
 <DT><B>Returns:</B><DD>A new ChromeDriverService using the default configuration.</DL>
-</DD>
-</DL>
-<HR>
-
-<A NAME="isRunning()"><!-- --></A><H3>
-isRunning</H3>
-<PRE>
-public boolean <B>isRunning</B>()</PRE>
-<DL>
-<DD>Checks whether the chromedriver child proces is currently running.
-<P>
-<DD><DL>
-
-<DT><B>Returns:</B><DD>Whether the chromedriver child process is still running.</DL>
-</DD>
-</DL>
-<HR>
-
-<A NAME="start()"><!-- --></A><H3>
-start</H3>
-<PRE>
-public void <B>start</B>()
-           throws java.io.IOException</PRE>
-<DL>
-<DD>Starts this service if it is not already running. This method will block until the server has
- been fully started and is ready to handle commands.
-<P>
-<DD><DL>
-
-<DT><B>Throws:</B>
-<DD><CODE>java.io.IOException</CODE> - If an error occurs while spawning the child process.<DT><B>See Also:</B><DD><A HREF="../../../../org/openqa/selenium/chrome/ChromeDriverService.html#stop()"><CODE>stop()</CODE></A></DL>
-</DD>
-</DL>
-<HR>
-
-<A NAME="stop()"><!-- --></A><H3>
-stop</H3>
-<PRE>
-public void <B>stop</B>()</PRE>
-<DL>
-<DD>Stops this service is it is currently running. This method will attempt to block until the
- server has been fully shutdown.
-<P>
-<DD><DL>
-<DT><B>See Also:</B><DD><A HREF="../../../../org/openqa/selenium/chrome/ChromeDriverService.html#start()"><CODE>start()</CODE></A></DL>
 </DD>
 </DL>
 <!-- ========= END OF CLASS DATA ========= -->

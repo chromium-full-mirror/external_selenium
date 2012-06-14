@@ -29,5 +29,10 @@ public class LogType {
    */
   public static final String DRIVER = "driver";
 
+  /**
+   * This log type pertains to logs relating to performance timings.
+   */
+  public static final String PROFILER = "profiler";
+
   private LogType() {}
 }

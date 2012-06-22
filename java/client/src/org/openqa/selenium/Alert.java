@@ -17,6 +17,8 @@ limitations under the License.
 
 package org.openqa.selenium;
 
+import org.openqa.selenium.security.Credentials;
+
 public interface Alert {
   void dismiss();
 
@@ -25,4 +27,6 @@ public interface Alert {
   String getText();
 
   void sendKeys(String keysToSend);
+
+  void authenticateUsing(Credentials credentials);
 }

@@ -15,7 +15,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-
 package org.openqa.selenium.firefox;
 
 import org.junit.runner.RunWith;
@@ -27,6 +26,7 @@ import org.openqa.selenium.firefox.internal.StreamsTest;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
     ExecutableTest.class,
+    FirefoxCapabilitiesTest.class,
     FirefoxDriverTest.class,
     FirefoxProfileTest.class,
     NativeEventsTest.class,

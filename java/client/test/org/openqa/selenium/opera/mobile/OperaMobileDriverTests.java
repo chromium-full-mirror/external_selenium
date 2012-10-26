@@ -21,10 +21,12 @@ package org.openqa.selenium.opera.mobile;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.openqa.selenium.StandardSeleniumTests;
+import org.openqa.selenium.interactions.touch.TouchTests;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-    StandardSeleniumTests.class
+    StandardSeleniumTests.class,
+    TouchTests.class
 })
 public class OperaMobileDriverTests {
 }
